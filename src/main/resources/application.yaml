@@ -1,0 +1,19 @@
+server:
+  port: 8080
+#logging:
+#  config: classpath:log4j2.yml  #指定配置文件的所在目录
+spring:
+  application:
+    name: small-boot-test
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://gz-cynosdbmysql-grp-6gwpmfhx.sql.tencentcdb.com:27581/leasing_user?serverTimezone=UTC
+    username: root
+    password: Clear123b$
+logging:
+  level:
+    fit.fancyday: info
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl

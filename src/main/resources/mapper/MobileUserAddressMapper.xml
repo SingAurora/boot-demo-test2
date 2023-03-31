@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="fit.fancyday.mapper.MobileUserAddressMapper">
+
+    <resultMap id="BaseResultMap" type="fit.fancyday.domain.MobileUserAddress">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="userId" column="user_id" jdbcType="INTEGER"/>
+            <result property="realName" column="real_name" jdbcType="CHAR"/>
+            <result property="phone" column="phone" jdbcType="CHAR"/>
+            <result property="province" column="province" jdbcType="CHAR"/>
+            <result property="city" column="city" jdbcType="CHAR"/>
+            <result property="district" column="district" jdbcType="CHAR"/>
+            <result property="town" column="town" jdbcType="CHAR"/>
+            <result property="detailedAddress" column="detailed_address" jdbcType="CHAR"/>
+            <result property="isDefault" column="default" jdbcType="TINYINT"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,user_id,real_name,
+        phone,province,city,
+        district,town,detailed_address,
+        default
+    </sql>
+</mapper>
