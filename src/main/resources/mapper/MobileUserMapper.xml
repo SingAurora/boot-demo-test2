@@ -23,4 +23,11 @@
         status,image_status,identity,
         created_time
     </sql>
+    <select id="test" parameterType="Integer" resultMap="fit.fancyday.mapper.MobileUserMapper.BaseResultMap">
+# 使用占位符可以防止sql注入
+        select
+        <include refid="Base_Column_List"/>
+        from mobile_user where id = #{id}
+    </select>
+
 </mapper>

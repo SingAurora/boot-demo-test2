@@ -3,6 +3,7 @@ package fit.fancyday.mapper;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import fit.fancyday.domain.MobileUser;
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Select;
 
 /**
  * @author SingAurora
@@ -12,6 +13,9 @@ import org.apache.ibatis.annotations.Mapper;
  */
 @Mapper
 public interface MobileUserMapper extends BaseMapper<MobileUser> {
+    MobileUser test(Integer id);
+    @Select("select * from mobile_user where id = #{id}")
+    MobileUser test2(Integer id);
 }
 
 

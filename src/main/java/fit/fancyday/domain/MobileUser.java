@@ -119,24 +119,24 @@ public class MobileUser implements Serializable {
         return result;
     }
 
-    @Override
-    public String toString() {
-        StringBuilder sb = new StringBuilder();
-        sb.append(getClass().getSimpleName());
-        sb.append(" [");
-        sb.append("Hash = ").append(hashCode());
-        sb.append(", id=").append(id);
-        sb.append(", salt=").append(salt);
-        sb.append(", nickname=").append(nickname);
-        sb.append(", password=").append(password);
-        sb.append(", phone=").append(phone);
-        sb.append(", image=").append(image);
-        sb.append(", status=").append(status);
-        sb.append(", imageStatus=").append(imageStatus);
-        sb.append(", identity=").append(identity);
-        sb.append(", createdTime=").append(createdTime);
-        sb.append(", serialVersionUID=").append(serialVersionUID);
-        sb.append("]");
-        return sb.toString();
-    }
+//    @Override
+//    public String toString() {
+//        StringBuilder sb = new StringBuilder();
+//        sb.append(getClass().getSimpleName());
+//        sb.append(" [");
+//        sb.append("Hash = ").append(hashCode());
+//        sb.append(", id=").append(id);
+//        sb.append(", salt=").append(salt);
+//        sb.append(", nickname=").append(nickname);
+//        sb.append(", password=").append(password);
+//        sb.append(", phone=").append(phone);
+//        sb.append(", image=").append(image);
+//        sb.append(", status=").append(status);
+//        sb.append(", imageStatus=").append(imageStatus);
+//        sb.append(", identity=").append(identity);
+//        sb.append(", createdTime=").append(createdTime);
+//        sb.append(", serialVersionUID=").append(serialVersionUID);
+//        sb.append("]");
+//        return sb.toString();
+//    }
 }
